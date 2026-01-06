@@ -9,7 +9,7 @@
   <url>http://maven.apache.org</url>
   <distributionManagement>
   <repository>
-    <id>NAME</id>
+    <id>cloudsmith</id>
     <url>https://maven.cloudsmith.io/psharma-dev/maven-demo-repo/</url>
   </repository>
 </distributionManagement>
