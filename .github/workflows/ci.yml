@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  first-deploy:
+    name: First Deploy
+    uses: ./.github/workflows/build-maven.yml
+    secrets: inherit
+
+  second-deploy:
+    name: Second Deploy (Duplicate)
+    needs: first-deploy
+    uses: ./.github/workflows/build-maven.yml
+    secrets: inherit
